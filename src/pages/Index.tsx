@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
+import LeadForm from '@/components/LeadForm';
 
 const Index = () => {
+  const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
+
+  const handleOpenLeadForm = () => {
+    setIsLeadFormOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-white font-open-sans">
       {/* Header */}
@@ -23,7 +30,7 @@ const Index = () => {
             <a href="#pricing" className="hover:text-gray-900 transition-colors">Тарифы</a>
             <a href="#cases" className="hover:text-gray-900 transition-colors">Кейсы</a>
           </nav>
-          <Button className="bg-lime text-black hover:bg-lime/90 font-medium">
+          <Button onClick={handleOpenLeadForm} className="bg-lime text-black hover:bg-lime/90 font-medium">
             Получить аудит
           </Button>
         </div>
@@ -545,7 +552,7 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
+                <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
                   <Icon name="Calendar" size={20} className="mr-2" />
                   Записаться на демо
                 </Button>
@@ -831,7 +838,7 @@ const Index = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
-                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-4 text-lg shadow-2xl hover:shadow-lime/25 transition-all">
+                <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-4 text-lg shadow-2xl hover:shadow-lime/25 transition-all">
                   <Icon name="Sparkles" size={20} className="mr-2" />
                   Получить бесплатный аудит
                 </Button>
@@ -898,6 +905,12 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Lead Form Modal */}
+      <LeadForm 
+        open={isLeadFormOpen} 
+        onOpenChange={setIsLeadFormOpen} 
+      />
     </div>
   );
 };
