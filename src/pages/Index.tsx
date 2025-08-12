@@ -502,18 +502,65 @@ const Index = () => {
       </section>
 
       {/* Demo CTA */}
-      <section className="py-20 px-6 bg-gradient-to-r from-lime/10 to-violet/10">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
-            Бесплатная демонстрация
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Оставьте заявку, мы проведем вам экскурсию по работе сервиса на примере вашей сферы.
-          </p>
-          <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-12 py-4 text-lg">
-            Оставить заявку
-          </Button>
+      <section className="py-20 px-6 bg-gradient-to-br from-violet/5 to-lime/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-violet/5 via-transparent to-lime/5"></div>
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-700">
+                <img 
+                  src="https://cdn.poehali.dev/files/3a9f9b1f-05b4-4a1b-a06b-b0e699d5cbbf.png"
+                  alt="Analytics Dashboard"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-lime/90 backdrop-blur-sm text-black px-3 py-1 rounded-full text-sm font-semibold">
+                  <Icon name="BarChart3" size={16} className="inline mr-1" />
+                  Live Demo
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 lg:order-2 text-center lg:text-left">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold text-gray-900 mb-6">
+                Бесплатная демонстрация
+              </h2>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Оставьте заявку, мы проведем вам экскурсию по работе сервиса на примере вашей сферы.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center justify-center lg:justify-start">
+                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
+                  <span className="text-gray-700 font-medium">Анализ реальных звонков из вашей CRM</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start">
+                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
+                  <span className="text-gray-700 font-medium">Персональные рекомендации по улучшению</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start">
+                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
+                  <span className="text-gray-700 font-medium">Прогноз роста выручки для вашей сферы</span>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
+                  <Icon name="Calendar" size={20} className="mr-2" />
+                  Записаться на демо
+                </Button>
+                <Button variant="outline" size="lg" className="border-violet text-violet hover:bg-violet/10 px-8 py-4 text-lg">
+                  <Icon name="Phone" size={20} className="mr-2" />
+                  +7 (999) 123-45-67
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-20 w-32 h-32 bg-lime/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-40 h-40 bg-violet/10 rounded-full blur-3xl"></div>
       </section>
 
       {/* Cases */}
