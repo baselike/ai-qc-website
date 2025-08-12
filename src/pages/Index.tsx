@@ -30,41 +30,40 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-montserrat font-bold text-gray-900 leading-tight mb-6">
-                Увеличим выручку на <span className="text-violet">10–20 %</span> за 90 дней с помощью <span className="bg-gradient-to-r from-lime to-green-400 bg-clip-text text-transparent">ИИ-отдела</span> контроля качества
-              </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed font-medium">
-                100 % звонков под контролем. Без найма новых сотрудников. Гарантия результата.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
-                  Получить бесплатный аудит
-                </Button>
-                <Button variant="outline" size="lg" className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all">
-                  <Icon name="Play" size={20} className="mr-2" />
-                  Смотреть демо
-                </Button>
-              </div>
-            </div>
-            <div className="relative lg:h-[600px] flex items-center justify-center">
-              <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-black">
-                <img 
-                  src="https://cdn.poehali.dev/files/268a70bc-6353-4d6a-90ba-89d2dd40e4bc.png"
-                  alt="AI Growth Analytics"
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute top-6 right-6 bg-lime/90 backdrop-blur-sm text-black px-4 py-2 rounded-full font-bold shadow-lg">
-                  <Icon name="TrendingUp" size={20} className="inline mr-2" />
-                  AI Growth
-                </div>
-              </div>
+      <section 
+        className="py-32 px-6 relative min-h-screen flex items-center"
+        style={{
+          backgroundImage: `url('https://cdn.poehali.dev/files/c17f981c-053d-4b77-9b99-203c0082e1e6.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto max-w-4xl relative z-10">
+          <div className="text-center">
+            <h1 className="text-5xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-8">
+              Увеличим выручку на <span className="text-lime">10–20 %</span> за 90 дней с помощью <span className="text-lime">ИИ-отдела</span> контроля качества
+            </h1>
+            <p className="text-2xl text-gray-100 mb-12 leading-relaxed font-medium max-w-3xl mx-auto">
+              100 % звонков под контролем. Без найма новых сотрудников. Гарантия результата.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-5 text-xl shadow-2xl hover:shadow-lime/25 transition-all">
+                Получить бесплатный аудит
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-white/80 text-white hover:bg-white hover:text-black px-10 py-5 text-xl backdrop-blur-sm transition-all">
+                <Icon name="Play" size={24} className="mr-3" />
+                Смотреть демо
+              </Button>
             </div>
           </div>
+        </div>
+        
+        {/* Floating AI Badge */}
+        <div className="absolute top-8 right-8 bg-lime/95 backdrop-blur-sm text-black px-6 py-3 rounded-full font-bold shadow-2xl">
+          <Icon name="Brain" size={24} className="inline mr-2" />
+          AI Powered
         </div>
       </section>
 
