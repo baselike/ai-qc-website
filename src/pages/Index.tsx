@@ -502,65 +502,124 @@ const Index = () => {
       </section>
 
       {/* Demo CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-violet/5 to-lime/5 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-violet/5 via-transparent to-lime/5"></div>
-        <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-700">
-                <img 
-                  src="https://cdn.poehali.dev/files/3a9f9b1f-05b4-4a1b-a06b-b0e699d5cbbf.png"
-                  alt="Analytics Dashboard"
-                  className="w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute top-4 left-4 bg-lime/90 backdrop-blur-sm text-black px-3 py-1 rounded-full text-sm font-semibold">
-                  <Icon name="BarChart3" size={16} className="inline mr-1" />
-                  Live Demo
+      <section className="py-20 px-6 bg-gray-900 relative overflow-hidden">
+        {/* Organic decorative elements */}
+        <div className="absolute inset-0 opacity-20">
+          <svg className="absolute top-10 left-10 w-80 h-80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="url(#gradient1)" strokeWidth="1" d="M30,150 Q50,50 80,100 Q110,150 140,80 Q170,120 180,60" />
+            <path fill="none" stroke="url(#gradient1)" strokeWidth="0.8" d="M20,120 Q60,40 90,90 Q120,140 150,70" />
+            <path fill="none" stroke="url(#gradient1)" strokeWidth="0.6" d="M40,180 Q70,80 100,130 Q130,180 160,110" />
+            <defs>
+              <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#84cc16" />
+                <stop offset="100%" stopColor="#65a30d" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg className="absolute bottom-10 right-10 w-60 h-60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="url(#gradient2)" strokeWidth="1.2" d="M160,40 Q120,80 90,50 Q60,20 30,60 Q10,100 50,120" />
+            <path fill="none" stroke="url(#gradient2)" strokeWidth="0.9" d="M180,60 Q140,100 110,70 Q80,40 50,80" />
+            <defs>
+              <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#84cc16" />
+                <stop offset="100%" stopColor="#a3e635" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-lime/20 rounded-2xl mb-6 border border-lime/30">
+              <Icon name="Sparkles" size={32} className="text-lime" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-montserrat font-bold text-white mb-6">
+              Проведем бесплатный аудит и демонстрацию уже сегодня
+            </h2>
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Покажем реальные возможности ИИ-анализа на примере ваших звонков и дадим персональные рекомендации по росту продаж
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* Card 1 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-lime/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime/20 rounded-xl flex items-center justify-center mb-4">
+                <Icon name="Search" size={24} className="text-lime" />
+              </div>
+              <h3 className="text-white font-semibold mb-2">Аудит звонков</h3>
+              <p className="text-gray-400 text-sm">Анализируем ваши записи и находим точки роста</p>
+              <div className="mt-4 h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div className="h-full w-4/5 bg-lime rounded-full"></div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-lime/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime/20 rounded-xl flex items-center justify-center mb-4">
+                <Icon name="TrendingUp" size={24} className="text-lime" />
+              </div>
+              <h3 className="text-white font-semibold mb-2">Прогноз роста</h3>
+              <p className="text-gray-400 text-sm">Показываем потенциал увеличения продаж</p>
+              <div className="mt-4 flex space-x-1">
+                <div className="flex-1 h-8 bg-lime rounded"></div>
+                <div className="flex-1 h-6 bg-lime/70 rounded"></div>
+                <div className="flex-1 h-10 bg-lime rounded"></div>
+                <div className="flex-1 h-7 bg-lime/60 rounded"></div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-lime/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime/20 rounded-xl flex items-center justify-center mb-4">
+                <Icon name="Target" size={24} className="text-lime" />
+              </div>
+              <h3 className="text-white font-semibold mb-2">Персональный план</h3>
+              <p className="text-gray-400 text-sm">Составляем roadmap под вашу отрасль</p>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-lime rounded-full"></div>
+                  <div className="h-1 bg-lime/60 rounded flex-1"></div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-lime rounded-full"></div>
+                  <div className="h-1 bg-lime/40 rounded flex-1"></div>
                 </div>
               </div>
             </div>
-            
-            <div className="order-1 lg:order-2 text-center lg:text-left">
-              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold text-gray-900 mb-6">
-                Бесплатная демонстрация
-              </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Оставьте заявку, мы проведем вам экскурсию по работе сервиса на примере вашей сферы.
-              </p>
-              
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Анализ реальных звонков из вашей CRM</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Персональные рекомендации по улучшению</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Прогноз роста выручки для вашей сферы</span>
-                </div>
+
+            {/* Card 4 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-lime/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime/20 rounded-xl flex items-center justify-center mb-4">
+                <Icon name="Clock" size={24} className="text-lime" />
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
-                  <Icon name="Calendar" size={20} className="mr-2" />
-                  Записаться на демо
-                </Button>
-                <Button variant="outline" size="lg" className="border-violet text-violet hover:bg-violet/10 px-8 py-4 text-lg">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  +7 (999) 123-45-67
-                </Button>
+              <h3 className="text-white font-semibold mb-2">Быстрый старт</h3>
+              <p className="text-gray-400 text-sm">Настройка за 30 минут, результат сегодня</p>
+              <div className="mt-4 relative">
+                <div className="w-full h-1 bg-gray-700 rounded-full"></div>
+                <div className="absolute top-0 left-0 w-3/4 h-1 bg-lime rounded-full"></div>
+                <div className="absolute -top-1 right-1/4 w-3 h-3 bg-lime rounded-full border-2 border-gray-800"></div>
               </div>
             </div>
           </div>
+
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-10 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
+                <Icon name="Calendar" size={20} className="mr-2" />
+                Записаться на бесплатный аудит
+              </Button>
+              <div className="flex items-center text-gray-300">
+                <Icon name="Clock" size={16} className="mr-2 text-lime" />
+                <span className="text-sm">Займет всего 30 минут</span>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm mt-4">
+              Или позвоните прямо сейчас: 
+              <span className="text-lime font-semibold ml-2">+7 (999) 123-45-67</span>
+            </p>
+          </div>
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute top-20 right-20 w-32 h-32 bg-lime/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-40 h-40 bg-violet/10 rounded-full blur-3xl"></div>
       </section>
 
       {/* Cases */}
