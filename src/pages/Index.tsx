@@ -30,35 +30,38 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl lg:text-6xl font-montserrat font-bold text-gray-900 leading-tight mb-6">
-                Увеличим выручку на <span className="text-violet">10–20 %</span> за 90 дней с помощью <span className="text-lime">ИИ-отдела</span> контроля качества
+                Увеличим выручку на <span className="text-violet">10–20 %</span> за 90 дней с помощью <span className="bg-gradient-to-r from-lime to-green-400 bg-clip-text text-transparent">ИИ-отдела</span> контроля качества
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed font-medium">
                 100 % звонков под контролем. Без найма новых сотрудников. Гарантия результата.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg">
+                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
                   Получить бесплатный аудит
                 </Button>
-                <Button variant="outline" size="lg" className="border-violet text-violet hover:bg-violet/10 px-8 py-4 text-lg">
+                <Button variant="outline" size="lg" className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all">
                   <Icon name="Play" size={20} className="mr-2" />
                   Смотреть демо
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="/img/ade56b73-7cdf-4d05-9024-5d0522ecc315.jpg"
-                alt="AI Dashboard"
-                className="rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -top-4 -right-4 bg-lime text-black px-4 py-2 rounded-full font-semibold shadow-lg">
-                <Icon name="Brain" size={20} className="inline mr-2" />
-                AI
+            <div className="relative lg:h-[600px] flex items-center justify-center">
+              <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-black">
+                <img 
+                  src="https://cdn.poehali.dev/files/268a70bc-6353-4d6a-90ba-89d2dd40e4bc.png"
+                  alt="AI Growth Analytics"
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute top-6 right-6 bg-lime/90 backdrop-blur-sm text-black px-4 py-2 rounded-full font-bold shadow-lg">
+                  <Icon name="TrendingUp" size={20} className="inline mr-2" />
+                  AI Growth
+                </div>
               </div>
             </div>
           </div>
