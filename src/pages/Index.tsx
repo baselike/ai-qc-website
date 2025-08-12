@@ -725,15 +725,128 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 bg-gray-900 text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-montserrat font-bold mb-6">
-            Проведем бесплатный аудит и демонстрацию уже сегодня
-          </h2>
-          <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-12 py-4 text-lg">
-            Оставить заявку
-          </Button>
+      <section className="py-24 px-6 bg-gray-950 text-white relative overflow-hidden">
+        {/* Organic leaf-like decorative elements */}
+        <div className="absolute inset-0 opacity-30">
+          <svg className="absolute top-8 left-8 w-96 h-96" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="url(#leafGradient1)" strokeWidth="2" opacity="0.8" 
+                  d="M50,250 Q80,150 120,200 Q160,130 200,180 Q240,120 280,160 Q250,90 220,130 Q180,60 140,100 Q100,30 60,80" />
+            <path fill="none" stroke="url(#leafGradient1)" strokeWidth="1.5" opacity="0.6"
+                  d="M30,220 Q70,140 110,190 Q150,110 190,160 Q230,100 270,140" />
+            <path fill="none" stroke="url(#leafGradient1)" strokeWidth="1" opacity="0.4"
+                  d="M40,280 Q90,200 130,250 Q170,180 210,230 Q250,160 290,200" />
+            <defs>
+              <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#a3e635" stopOpacity="0.8" />
+                <stop offset="50%" stopColor="#84cc16" stopOpacity="0.6" />
+                <stop offset="100%" stopColor="#65a30d" stopOpacity="0.4" />
+              </linearGradient>
+            </defs>
+          </svg>
+          
+          <svg className="absolute bottom-8 right-8 w-80 h-80" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="url(#leafGradient2)" strokeWidth="2" opacity="0.7"
+                  d="M200,50 Q170,90 140,70 Q110,110 80,90 Q50,130 20,110 Q10,160 50,180 Q90,200 130,180 Q170,200 210,180" />
+            <path fill="none" stroke="url(#leafGradient2)" strokeWidth="1.2" opacity="0.5"
+                  d="M220,70 Q190,110 160,90 Q130,130 100,110 Q70,150 40,130" />
+            <defs>
+              <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#84cc16" stopOpacity="0.7" />
+                <stop offset="100%" stopColor="#a3e635" stopOpacity="0.3" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left side - AI branding and organic elements */}
+            <div className="relative">
+              {/* AI Badge like in reference */}
+              <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-lime/20 to-lime/10 border-2 border-lime/30 rounded-3xl mb-8">
+                <span className="text-4xl font-black text-lime">AI</span>
+              </div>
+              
+              {/* Dashboard cards grid */}
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
+                  <div className="text-gray-400 text-sm mb-2">Соответствие скрипту</div>
+                  <div className="flex items-end space-x-1 h-16">
+                    <div className="w-6 h-8 bg-gray-600 rounded-sm"></div>
+                    <div className="w-6 h-12 bg-gray-600 rounded-sm"></div>
+                    <div className="w-6 h-6 bg-gray-600 rounded-sm"></div>
+                    <div className="w-6 h-10 bg-gray-600 rounded-sm"></div>
+                    <div className="w-6 h-4 bg-gray-600 rounded-sm"></div>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">0% 5% 10% 20% 30%</div>
+                </div>
+                
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
+                  <div className="text-gray-400 text-sm mb-2">Приветствие</div>
+                  <div className="flex items-end justify-center h-16">
+                    <div className="w-16 h-full bg-lime rounded-sm"></div>
+                  </div>
+                  <div className="text-center text-xs text-gray-500 mt-1">Да</div>
+                </div>
+                
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
+                  <div className="text-gray-400 text-sm mb-2">Презентация</div>
+                  <div className="flex items-end space-x-1 h-16">
+                    <div className="w-8 h-full bg-lime rounded-sm"></div>
+                    <div className="w-8 h-8 bg-lime/60 rounded-sm"></div>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">Да Нет</div>
+                </div>
+                
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
+                  <div className="text-gray-400 text-sm mb-2">Возражения</div>
+                  <div className="flex items-end space-x-1 h-16">
+                    <div className="w-6 h-12 bg-lime rounded-sm"></div>
+                    <div className="w-6 h-6 bg-lime/70 rounded-sm"></div>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">Да Частично</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - CTA content */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8 leading-tight">
+                Проведем бесплатный аудит и демонстрацию уже сегодня
+              </h2>
+              
+              <div className="space-y-6 mb-10">
+                <div className="flex items-start lg:justify-start justify-center">
+                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <p className="text-gray-300 text-lg">Покажем реальные возможности на ваших данных</p>
+                </div>
+                <div className="flex items-start lg:justify-start justify-center">
+                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <p className="text-gray-300 text-lg">Дадим персональные рекомендации по росту</p>
+                </div>
+                <div className="flex items-start lg:justify-start justify-center">
+                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <p className="text-gray-300 text-lg">Составим план внедрения под вашу CRM</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
+                <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-4 text-lg shadow-2xl hover:shadow-lime/25 transition-all">
+                  <Icon name="Sparkles" size={20} className="mr-2" />
+                  Получить бесплатный аудит
+                </Button>
+                <div className="flex items-center text-gray-400 lg:justify-start justify-center">
+                  <Icon name="Clock" size={16} className="mr-2 text-lime" />
+                  <span>30 минут • Сегодня</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional organic glow elements */}
+        <div className="absolute top-32 right-32 w-40 h-40 bg-lime/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-32 w-32 h-32 bg-lime/5 rounded-full blur-3xl"></div>
       </section>
 
       {/* Footer */}
