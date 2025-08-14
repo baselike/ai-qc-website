@@ -56,7 +56,7 @@ const Index = () => {
               Увеличим выручку минимум на 10 % с помощью ИИ-отдела контроля качества.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-5 text-xl shadow-2xl hover:shadow-lime/25 transition-all">
+              <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-5 text-xl shadow-2xl hover:shadow-lime/25 transition-all">
                 Записаться на онлайн экскурсию
               </Button>
             </div>
@@ -752,10 +752,11 @@ const Index = () => {
                 
                 <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
                   <div className="text-gray-400 text-sm mb-2">Приветствие</div>
-                  <div className="flex items-end justify-center h-16">
-                    <div className="w-16 h-full bg-lime rounded-sm"></div>
+                  <div className="flex items-end space-x-1 h-16">
+                    <div className="w-8 h-full bg-lime rounded-sm"></div>
+                    <div className="w-8 h-8 bg-lime/60 rounded-sm"></div>
                   </div>
-                  <div className="text-center text-xs text-gray-500 mt-1">Да</div>
+                  <div className="text-xs text-gray-500 mt-1">Да Нет</div>
                 </div>
                 
                 <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4">
@@ -805,8 +806,8 @@ const Index = () => {
                   Получить бесплатный аудит
                 </Button>
                 <div className="flex items-center text-gray-400 lg:justify-start justify-center">
-                  <Icon name="Clock" size={16} className="mr-2 text-lime" />
-                  <span>30 минут • Сегодня</span>
+                  <Icon name="Clock" size={25} className="mr-2 text-lime" />
+                  <span>30 минут Сегодня</span>
                 </div>
               </div>
             </div>
