@@ -53,15 +53,11 @@ const Index = () => {
               Увеличим выручку на <span className="text-lime">10–20 %</span> за 90 дней с помощью <span className="text-lime">ИИ-отдела</span> контроля качества
             </h1>
             <p className="text-2xl text-gray-100 mb-12 leading-relaxed font-medium max-w-3xl mx-auto">
-              100 % звонков под контролем. Без найма новых сотрудников. Гарантия результата.
+              Увеличим выручку минимум на 10 % с помощью ИИ-отдела контроля качества.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-5 text-xl shadow-2xl hover:shadow-lime/25 transition-all">
-                Получить бесплатный аудит
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-white/80 text-white hover:bg-white hover:text-black px-10 py-5 text-xl backdrop-blur-sm transition-all">
-                <Icon name="Play" size={24} className="mr-3" />
-                Смотреть демо
+                Записаться на онлайн экскурсию
               </Button>
             </div>
           </div>
@@ -79,12 +75,8 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
-              ИИ-контроль качества — точка роста продаж
+              Для кого?
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Наш сервис на основе нейросетей помогает находить слабые места в работе отдела продаж, 
-              чтобы вы зарабатывали больше без лишней нагрузки на команду и затрат на привлечение клиентов.
-            </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -536,21 +528,6 @@ const Index = () => {
                 Оставьте заявку, мы проведем вам экскурсию по работе сервиса на примере вашей сферы.
               </p>
               
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Анализ реальных звонков из вашей CRM</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Персональные рекомендации по улучшению</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <Icon name="CheckCircle" size={20} className="text-lime mr-3" />
-                  <span className="text-gray-700 font-medium">Прогноз роста выручки для вашей сферы</span>
-                </div>
-              </div>
-              
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all">
                   <Icon name="Calendar" size={20} className="mr-2" />
@@ -890,17 +867,17 @@ const Index = () => {
             <div>
               <h4 className="font-montserrat font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>+7 (999) 123-45-67</li>
-                <li>info@baselike.ru</li>
-                <li>Москва, ул. Примерная, 1</li>
+                <li><a href="tel:79101307620">+7 (910) 130-76-20</a></li>
+                <li><a href='https://t.me/rodionov9'>@rodionov9</a></li>
+                <li>b2b@baselike-tech.ru</li>
               </ul>
             </div>
           </div>
           <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-            <p>&copy; 2024 BaseLike. Все права защищены.</p>
+            <p>&copy; 2025 BaseLike. Все права защищены.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-gray-900">Политика конфиденциальности</a>
-              <a href="#" className="hover:text-gray-900">Условия использования</a>
+              <a href="https://baselike.ru/privacy-agreement" className="hover:text-gray-900">Согласие на обработку персональных данных</a>
+              <a href="https://baselike.ru/privacy" className="hover:text-gray-900">Политика обработки персональных данных</a>
             </div>
           </div>
         </div>
