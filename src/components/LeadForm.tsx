@@ -16,34 +16,73 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
     fullName: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState({
+    phone: ''
+  });
+
+  const validatePhone = (phone: string): boolean => {
+    // Проверяем российский номер телефона
+    const phoneRegex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+    return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+  };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
     }));
+
+    // Очищаем ошибки при изменении поля
+    if (field === 'phone' && errors.phone) {
+      setErrors(prev => ({ ...prev, phone: '' }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Валидация телефона
+    if (!validatePhone(formData.phone)) {
+      setErrors({ phone: 'Введите корректный номер телефона' });
+      return;
+    }
+
     setIsSubmitting(true);
     
-    // Симуляция отправки данных
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Здесь будет реальная отправка данных на сервер
-    console.log('Отправляем заявку:', formData);
-    
-    // Сброс формы и закрытие модального окна
-    setFormData({ companyName: '', phone: '', fullName: '' });
-    setIsSubmitting(false);
-    onOpenChange(false);
-    
-    // Показываем уведомление об успешной отправке
-    alert('Заявка отправлена! Мы свяжемся с вами в течение часа.');
+    try {
+      const response = await fetch('/form_filled', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          company_name: formData.companyName,
+          phone: formData.phone,
+          full_name: formData.fullName
+        }),
+      });
+
+      if (response.status === 200) {
+        const data = await response.json();
+        if (data.status === 'ok') {
+          // Успешная отправка - перенаправляем на страницу успеха
+          window.location.href = '/success';
+          return;
+        }
+      }
+      
+      // Если что-то пошло не так
+      alert('Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз.');
+      
+    } catch (error) {
+      console.error('Ошибка отправки формы:', error);
+      alert('Произошла ошибка при отправке заявки. Пожалуйста, попробуйте еще раз.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const isFormValid = formData.companyName.trim() && formData.phone.trim() && formData.fullName.trim();
+  const isFormValid = formData.companyName.trim() && formData.phone.trim() && formData.fullName.trim() && !errors.phone;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -102,8 +141,14 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
               value={formData.phone}
               onChange={(e) => handleInputChange('phone', e.target.value)}
               required
-              className="border-gray-300 focus:border-lime focus:ring-lime"
+              className={`border-gray-300 focus:border-lime focus:ring-lime ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}`}
             />
+            {errors.phone && (
+              <p className="text-sm text-red-500 flex items-center">
+                <Icon name="AlertCircle" size={16} className="mr-1" />
+                {errors.phone}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-col space-y-4 pt-4">
