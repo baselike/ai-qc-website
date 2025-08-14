@@ -79,7 +79,7 @@ const Index = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="text-center p-8 border-0 shadow-lg">
               <CardHeader>
                 <div className="w-16 h-16 bg-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -327,19 +327,31 @@ const Index = () => {
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    5 ключевых метрик
+                    5 ключевых метрик для контроля
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Анализ звонков и этапов
+                    Анализ звонков и этапов продаж
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Сводная аналитика
+                    Сводная аналитика по отделу
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     Рейтинг сотрудников
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Точная транскрипция звонков
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Личный менеджер и поддержка
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Персональное обучение
                   </div>
                 </div>
                 <div className="border-t pt-4">
@@ -373,6 +385,14 @@ const Index = () => {
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    10 метрик для анализа
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Все функции базового тарифа
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     Кастомные этапы продаж
                   </div>
                   <div className="flex items-center">
@@ -381,7 +401,11 @@ const Index = () => {
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Отчёты для собственника
+                    Отчёты для собственника и РОПа
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Рекомендации по повышению конверсии
                   </div>
                 </div>
                 <div className="border-t pt-4">
@@ -416,11 +440,19 @@ const Index = () => {
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Индивидуальные воронки
+                    Индивидуальные воронки и скрипты
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Расширенные отчёты
+                    Расширенные отчёты и аналитика
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Совместная разработка улучшений отдела продаж
+                  </div>
+                  <div className="flex items-center">
+                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                    Полная интеграция с CRM и внешними сервисами
                   </div>
                 </div>
                 <div className="border-t pt-4">
@@ -436,14 +468,14 @@ const Index = () => {
                   Индивидуальный
                 </CardTitle>
                 <CardDescription className="text-violet font-medium">
-                  от 15 пользователей
+                  Без ограничений по направлениям и метрикам
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Без ограничений
+                    От 15 пользователей
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
@@ -503,10 +535,12 @@ const Index = () => {
                   <Icon name="Calendar" size={20} className="mr-2" />
                   Записаться на демо
                 </Button>
-                <Button variant="outline" size="lg" className="border-violet text-violet hover:bg-violet/10 px-8 py-4 text-lg">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  +7 (999) 123-45-67
-                </Button>
+                <a href="tel:+79101307620" >
+                  <Button variant="outline" size="lg" className="border-violet text-violet hover:bg-violet/10 px-8 py-4 text-lg">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    +7 (910) 130-76-60
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -830,9 +864,9 @@ const Index = () => {
             <div>
               <h4 className="font-montserrat font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><a href="tel:79101307620">+7 (910) 130-76-20</a></li>
-                <li><a href='https://t.me/rodionov9'>@rodionov9</a></li>
-                <li><a href="email:b2b@baselike-tech.ru">b2b@baselike-tech.ru</a></li>
+                <li><a href="tel:+79101307620" className="hover:text-gray-900">+7 (910) 130-76-20</a></li>
+                <li><a href='https://t.me/rodionov9' className="hover:text-gray-900">@rodionov9</a></li>
+                <li><a href="email:b2b@baselike-tech.ru" className="hover:text-gray-900">b2b@baselike-tech.ru</a></li>
               </ul>
             </div>
           </div>
