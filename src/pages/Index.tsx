@@ -112,21 +112,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center p-8 border-0 shadow-lg">
-              <CardHeader>
-                <div className="w-16 h-16 bg-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="UserCheck" size={32} className="text-violet" />
-                </div>
-                <CardTitle className="text-xl font-montserrat font-semibold text-gray-900">
-                  Менеджер по продажам
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Понимаете, что исправить, чтобы закрывать больше сделок.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -136,7 +121,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
-              Выгоды решения
+              Что дает ИИ отдел контроля качетва?
             </h2>
           </div>
 
@@ -149,20 +134,20 @@ const Index = () => {
                     <Icon name="TrendingUp" size={24} className="text-black" />
                   </div>
                   <h3 className="text-2xl font-montserrat font-semibold text-gray-900">
-                    Рост продаж и конверсий
+                    Увеличение выручки
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  ИИ находит ключевые моменты в звонках и даёт рекомендации для увеличения конверсии и снижения отказов.
+                  Наша задача помочь вам увеличить ваши продажи, за счет внедрения нашего инструмента. Без расширения штата, дополнительной нагрузки и временных затрат.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-green-600">
                     <Icon name="Plus" size={16} className="mr-2" />
-                    <span className="font-semibold">+5–8% к конверсии за 1–2 месяца</span>
+                    <span className="font-semibold">+ 10% к выручке</span>
                   </div>
                   <div className="flex items-center text-green-600">
                     <Icon name="Plus" size={16} className="mr-2" />
-                    <span className="font-semibold">50+ компаний повысили LTV на 15–18%</span>
+                    <span className="font-semibold">+5–8% к конверсии за 1–2 месяца</span>
                   </div>
                 </div>
               </div>
