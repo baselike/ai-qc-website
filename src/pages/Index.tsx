@@ -343,13 +343,8 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="border-t pt-4">
-                  <div className="text-lg font-semibold">💰 Внедрение: 70 000 ₽</div>
-                  <div className="text-lg font-semibold">📅 Абонплата: 35 000 ₽</div>
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 5 ₽</div>
                 </div>
-                <Button className="w-full bg-lime text-black hover:bg-lime/90">
-                  Выбрать тариф
-                </Button>
               </CardContent>
             </Card>
 
@@ -390,13 +385,8 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="border-t pt-4">
-                  <div className="text-lg font-semibold">💰 Внедрение: 100 000 ₽</div>
-                  <div className="text-lg font-semibold">📅 Абонплата: 50 000 ₽</div>
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 3 ₽</div>
                 </div>
-                <Button className="w-full bg-violet text-white hover:bg-violet/90">
-                  Выбрать тариф
-                </Button>
               </CardContent>
             </Card>
 
@@ -434,13 +424,8 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="border-t pt-4">
-                  <div className="text-lg font-semibold">💰 Внедрение: 150 000 ₽</div>
-                  <div className="text-lg font-semibold">📅 Абонплата: 75 000 ₽</div>
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 2 ₽</div>
                 </div>
-                <Button className="w-full bg-lime text-black hover:bg-lime/90">
-                  Выбрать тариф
-                </Button>
               </CardContent>
             </Card>
 
@@ -476,7 +461,7 @@ const Index = () => {
                 <div className="border-t pt-4">
                   <div className="text-lg font-semibold text-center">💬 Обсуждается индивидуально</div>
                 </div>
-                <Button variant="outline" className="w-full border-violet text-violet hover:bg-violet/10">
+                <Button onClick={handleOpenLeadForm} variant="outline" className="w-full border-violet text-violet hover:bg-violet/10">
                   Обсудить условия
                 </Button>
               </CardContent>
@@ -843,19 +828,11 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-montserrat font-semibold mb-4">Поддержка</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li><a href="#" className="hover:text-gray-900">Документация</a></li>
-                <li><a href="#" className="hover:text-gray-900">FAQ</a></li>
-                <li><a href="#" className="hover:text-gray-900">Техподдержка</a></li>
-              </ul>
-            </div>
-            <div>
               <h4 className="font-montserrat font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li><a href="tel:79101307620">+7 (910) 130-76-20</a></li>
                 <li><a href='https://t.me/rodionov9'>@rodionov9</a></li>
-                <li>b2b@baselike-tech.ru</li>
+                <li><a href="email:b2b@baselike-tech.ru">b2b@baselike-tech.ru</a></li>
               </ul>
             </div>
           </div>
