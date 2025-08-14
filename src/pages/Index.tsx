@@ -310,7 +310,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-4 gap-6">
             {/* Basic */}
-            <Card className="relative border-2 border-gray-200">
+            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-xl font-montserrat font-semibold">
                   Базовый
@@ -319,8 +319,8 @@ const Index = () => {
                   от 3 направлений
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2 text-sm">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="space-y-2 text-sm flex-1">
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     До 5 пользователей
@@ -354,14 +354,14 @@ const Index = () => {
                     Персональное обучение
                   </div>
                 </div>
-                <div className="border-t pt-4">
+                <div className="border-t pt-4 mt-4">
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 5 ₽</div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Standard */}
-            <Card className="relative border-2 border-violet bg-violet/5">
+            <Card className="relative border-2 border-violet bg-violet/5 h-full flex flex-col">
               <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-violet text-white">
                 Популярный
               </Badge>
@@ -373,15 +373,11 @@ const Index = () => {
                   от 5 направлений
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2 text-sm">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="space-y-2 text-sm flex-1">
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     До 10 пользователей
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    10 метрик для анализа
                   </div>
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
@@ -408,14 +404,14 @@ const Index = () => {
                     Рекомендации по повышению конверсии
                   </div>
                 </div>
-                <div className="border-t pt-4">
+                <div className="border-t pt-4 mt-4">
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 3 ₽</div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Premium */}
-            <Card className="relative border-2 border-gray-200">
+            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-xl font-montserrat font-semibold">
                   Премиум
@@ -424,8 +420,8 @@ const Index = () => {
                   от 7 направлений
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2 text-sm">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="space-y-2 text-sm flex-1">
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     До 15 пользователей
@@ -455,14 +451,14 @@ const Index = () => {
                     Полная интеграция с CRM и внешними сервисами
                   </div>
                 </div>
-                <div className="border-t pt-4">
+                <div className="border-t pt-4 mt-4">
                   <div className="text-sm text-gray-600">⏱ Стоимость минуты: 2 ₽</div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Custom */}
-            <Card className="relative border-2 border-gray-200">
+            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-xl font-montserrat font-semibold">
                   Индивидуальный
@@ -471,8 +467,8 @@ const Index = () => {
                   Без ограничений по направлениям и метрикам
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2 text-sm">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="space-y-2 text-sm flex-1">
                   <div className="flex items-center">
                     <Icon name="Check" size={16} className="text-green-500 mr-2" />
                     От 15 пользователей
@@ -490,10 +486,10 @@ const Index = () => {
                     Все условия под вас
                   </div>
                 </div>
-                <div className="border-t pt-4">
+                <div className="border-t pt-4 mt-4">
                   <div className="text-lg font-semibold text-center">💬 Обсуждается индивидуально</div>
                 </div>
-                <Button onClick={handleOpenLeadForm} variant="outline" className="w-full border-violet text-violet hover:bg-violet/10">
+                <Button onClick={handleOpenLeadForm} variant="outline" className="w-full border-violet text-violet hover:bg-violet/10 mt-4">
                   Обсудить условия
                 </Button>
               </CardContent>
