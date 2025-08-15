@@ -418,12 +418,11 @@ const Index = () => {
 
           {/* Call to action */}
           <div className="text-center mt-16">
-            <button 
-              onClick={handleOpenLeadForm}
-              className="bg-gradient-to-r from-violet to-lime text-white px-8 py-4 rounded-xl text-lg font-montserrat font-semibold hover:from-violet/90 hover:to-lime/90 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Записаться на онлайн экскурсию
-            </button>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-5 text-xl shadow-2xl hover:shadow-lime/25 transition-all">
+                Записаться на онлайн экскурсию
+              </Button>
+            </div>
           </div>
         </div>
       </section>
