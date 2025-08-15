@@ -269,8 +269,157 @@ const Index = () => {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* How we achieve results */}
       <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
+              За счет чего получаем результат
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-lime/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="Target" size={24} className="text-lime" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Рекомендации по повышению конверсии
+                  </h3>
+                  <p className="text-gray-600">
+                    Конкретно под вас — точечные советы, как закрывать больше сделок.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-violet/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="Eye" size={24} className="text-violet" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    ИИ слушает 100% звонков, а не выборочно
+                  </h3>
+                  <p className="text-gray-600">
+                    РОП видит полную картину по звонкам, по всему отделу продаж.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-lime/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="Activity" size={24} className="text-lime" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Анализ звонков и этапов продаж
+                  </h3>
+                  <p className="text-gray-600">
+                    Автоматическая транскрипция и оценка по чек-листам, выявление ошибок и сильных сторон.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-violet/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="BarChart3" size={24} className="text-violet" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Сводная аналитика по отделу
+                  </h3>
+                  <p className="text-gray-600">
+                    Ключевые метрики, рейтинг сотрудников, контроль конверсий на всех этапах.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-lime/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="Settings" size={24} className="text-lime" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Персонализация под ваш бизнес
+                  </h3>
+                  <p className="text-gray-600">
+                    Кастомные этапы продаж, индивидуальные чек-листы, собственные воронки и скрипты.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-violet/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="FileText" size={24} className="text-violet" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Отчёты для собственника и РОПа
+                  </h3>
+                  <p className="text-gray-600">
+                    Наглядные данные для управленческих решений.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 7 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-lime/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="Zap" size={24} className="text-lime" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Полная интеграция с CRM и сервисами
+                  </h3>
+                  <p className="text-gray-600">
+                    Работаем внутри вашей экосистемы, без ручных отчётов.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 8 */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-violet/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Icon name="GraduationCap" size={24} className="text-violet" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">
+                    Обучение и поддержка команды
+                  </h3>
+                  <p className="text-gray-600">
+                    Персональные сессии, помощь внедрения и совместная разработка улучшений.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
