@@ -415,6 +415,16 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          {/* Call to action */}
+          <div className="text-center mt-16">
+            <button 
+              onClick={() => setShowForm(true)}
+              className="bg-gradient-to-r from-violet to-lime text-white px-8 py-4 rounded-xl text-lg font-montserrat font-semibold hover:from-violet/90 hover:to-lime/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Записаться на онлайн экскурсию
+            </button>
+          </div>
         </div>
       </section>
 
