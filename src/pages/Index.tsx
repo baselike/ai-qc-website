@@ -138,24 +138,24 @@ const Index = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Наша задача помочь вам увеличить ваши продажи, за счет внедрения нашего инструмента. Без расширения штата, дополнительной нагрузки и временных затрат.
+                  Наша задача помочь вам увеличить ваши продажи, решение анализирует работу отдела продаж, выявляет упущенные возможности и помогает монетизировать каждый контакт.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-green-600">
                     <Icon name="Plus" size={16} className="mr-2" />
-                    <span className="font-semibold">+ 10% к выручке</span>
+                    <span className="font-semibold">Рост общей выручки минимум 10% после внедрения ИИ ОКК</span>
                   </div>
                   <div className="flex items-center text-green-600">
                     <Icon name="Plus" size={16} className="mr-2" />
-                    <span className="font-semibold">+5–8% к конверсии за 1–2 месяца</span>
+                    <span className="font-semibold">80% клиентов фиксируют рост среднего чека</span>
                   </div>
                 </div>
               </div>
               <div className="lg:w-1/2">
                 <div className="bg-gradient-to-r from-lime/20 to-violet/20 p-8 rounded-2xl">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-violet mb-2">+18%</div>
-                    <div className="text-gray-600">Средний рост LTV</div>
+                    <div className="text-4xl font-bold text-violet mb-2">+10%</div>
+                    <div className="text-gray-600">Минимальный рост выручки</div>
                   </div>
                 </div>
               </div>
@@ -166,31 +166,31 @@ const Index = () => {
               <div className="lg:w-1/2">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-violet rounded-full flex items-center justify-center mr-4">
-                    <Icon name="Clock" size={24} className="text-white" />
+                    <Icon name="Target" size={24} className="text-white" />
                   </div>
                   <h3 className="text-2xl font-montserrat font-semibold text-gray-900">
-                    Экономия бюджета и контроль команды
+                    Рост продаж и конверсий
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Автоматическая проверка звонков по чек-листам. Быстро находит ошибки и предлагает решение.
+                  ИИ находит ключевые моменты в звонках, дает рекомендации для повышения конверсии и сокращения отказов.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-green-600">
-                    <Icon name="Clock" size={16} className="mr-2" />
-                    <span className="font-semibold">40–60 часов экономим руководителю</span>
+                    <Icon name="Plus" size={16} className="mr-2" />
+                    <span className="font-semibold">+5–8% к конверсии</span>
                   </div>
                   <div className="flex items-center text-green-600">
-                    <Icon name="TrendingUp" size={16} className="mr-2" />
-                    <span className="font-semibold">20–35% рост эффективности</span>
+                    <Icon name="Minus" size={16} className="mr-2" />
+                    <span className="font-semibold">Сокращение потерь лидов на 12–20%</span>
                   </div>
                 </div>
               </div>
               <div className="lg:w-1/2">
                 <div className="bg-gradient-to-r from-violet/20 to-lime/20 p-8 rounded-2xl">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-violet mb-2">60ч</div>
-                    <div className="text-gray-600">Экономия времени в месяц</div>
+                    <div className="text-4xl font-bold text-violet mb-2">+8%</div>
+                    <div className="text-gray-600">Рост конверсии</div>
                   </div>
                 </div>
               </div>
@@ -201,35 +201,66 @@ const Index = () => {
               <div className="lg:w-1/2">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center mr-4">
-                    <Icon name="Shield" size={24} className="text-black" />
+                    <Icon name="Clock" size={24} className="text-black" />
                   </div>
                   <h3 className="text-2xl font-montserrat font-semibold text-gray-900">
-                    Отдел продаж под контролем
+                    Экономия бюджета и контроль команды
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Вся аналитика и ошибки менеджеров в одном дашборде.
+                  Автоматическая проверка звонков по чек-листам: быстро находит ошибки, дает точные рекомендации и снижает нагрузку на руководителей, увеличивая норму управляемости.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-green-600">
-                    <Icon name="BarChart" size={16} className="mr-2" />
-                    <span className="font-semibold">100+ метрик</span>
+                    <Icon name="Clock" size={16} className="mr-2" />
+                    <span className="font-semibold">Экономия 40–60 часов работы руководителя в месяц</span>
                   </div>
                   <div className="flex items-center text-green-600">
-                    <Icon name="Phone" size={16} className="mr-2" />
-                    <span className="font-semibold">10 000+ звонков обучено</span>
-                  </div>
-                  <div className="flex items-center text-green-600">
-                    <Icon name="Users" size={16} className="mr-2" />
-                    <span className="font-semibold">От 3 до 100 менеджеров</span>
+                    <Icon name="TrendingUp" size={16} className="mr-2" />
+                    <span className="font-semibold">20–35% рост эффективности менеджеров</span>
                   </div>
                 </div>
               </div>
               <div className="lg:w-1/2">
                 <div className="bg-gradient-to-r from-lime/20 to-violet/20 p-8 rounded-2xl">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-violet mb-2">100+</div>
-                    <div className="text-gray-600">Контролируемых метрик</div>
+                    <div className="text-4xl font-bold text-violet mb-2">60ч</div>
+                    <div className="text-gray-600">Экономия времени в месяц</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Benefit 4 */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-violet rounded-full flex items-center justify-center mr-4">
+                    <Icon name="Shield" size={24} className="text-white" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-semibold text-gray-900">
+                    Повышение эффективности без расширения штата
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Системы ИИ берут на себя рутинные задачи, нет необходимости нанимать опытного аудитора, сторонние команды и подключать доп сервисы.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-green-600">
+                    <Icon name="Shield" size={16} className="mr-2" />
+                    <span className="font-semibold">100% звонков под контролем</span>
+                  </div>
+                  <div className="flex items-center text-green-600">
+                    <Icon name="DollarSign" size={16} className="mr-2" />
+                    <span className="font-semibold">Снижение затрат на внешние услуги и аудит до 0 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/2">
+                <div className="bg-gradient-to-r from-violet/20 to-lime/20 p-8 rounded-2xl">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-violet mb-2">100%</div>
+                    <div className="text-gray-600">Звонков под контролем</div>
                   </div>
                 </div>
               </div>
