@@ -50,7 +50,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('/form_filled', {
+      const response = await fetch('/form_filled.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
