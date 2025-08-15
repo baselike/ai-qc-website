@@ -172,7 +172,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
             
             <p className="text-xs text-gray-500 text-center">
               Нажимая кнопку, вы соглашаетесь с{' '}
-              <a href="#" className="text-lime hover:underline">политикой конфиденциальности</a>
+              <a href="https://baselike.ru/privacy" className="text-lime hover:underline">политикой конфиденциальности</a>
             </p>
           </div>
         </form>

@@ -19,7 +19,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="https://cdn.poehali.dev/files/c81ab5fe-5776-4be8-84bf-da2e5c097f4a.png" 
+              src="/img/logo.png" 
               alt="BaseLike Logo" 
               className="h-8"
             />
@@ -40,7 +40,7 @@ const Index = () => {
       <section 
         className="py-32 px-6 relative min-h-screen flex items-center"
         style={{
-          backgroundImage: `url('https://cdn.poehali.dev/files/c17f981c-053d-4b77-9b99-203c0082e1e6.png')`,
+          backgroundImage: `url('/img/hero-background.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -488,7 +488,7 @@ const Index = () => {
             <div className="order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-700">
                 <img 
-                  src="https://cdn.poehali.dev/files/3a9f9b1f-05b4-4a1b-a06b-b0e699d5cbbf.png"
+                  src="/public/img/dashboard.png"
                   alt="Analytics Dashboard"
                   className="w-full h-auto"
                 />
@@ -806,7 +806,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <img 
-                src="https://cdn.poehali.dev/files/c81ab5fe-5776-4be8-84bf-da2e5c097f4a.png" 
+                src="/img/logo.png" 
                 alt="BaseLike Logo" 
                 className="h-8 mb-4"
               />
