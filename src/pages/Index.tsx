@@ -488,7 +488,7 @@ const Index = () => {
             <div className="order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-700">
                 <img 
-                  src="/public/img/dashboard.png"
+                  src="/img/dashboard.png"
                   alt="Analytics Dashboard"
                   className="w-full h-auto"
                 />
