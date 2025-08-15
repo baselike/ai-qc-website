@@ -50,7 +50,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-8">
-              Увеличим выручку на <span className="text-lime">10–20 %</span> за 90 дней с помощью <span className="text-lime">ИИ-отдела</span> контроля качества
+              Увеличим выручку минимум на <span className="text-lime">10%</span> с помощью <span className="text-lime">ИИ-отдела</span> контроля качества
             </h1>
             <p className="text-2xl text-gray-100 mb-12 leading-relaxed font-medium max-w-3xl mx-auto">
               Увеличим выручку минимум на 10 % с помощью ИИ-отдела контроля качества.
@@ -479,204 +479,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-20 px-6">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-montserrat font-bold text-gray-900 mb-6">
-              Тарифы
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-4 gap-6">
-            {/* Basic */}
-            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl font-montserrat font-semibold">
-                  Базовый
-                </CardTitle>
-                <CardDescription className="text-violet font-medium">
-                  от 3 направлений
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <div className="space-y-2 text-sm flex-1">
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    До 5 пользователей
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    5 ключевых метрик для контроля
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Анализ звонков и этапов продаж
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Сводная аналитика по отделу
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Рейтинг сотрудников
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Точная транскрипция звонков
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Личный менеджер и поддержка
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Персональное обучение
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="text-sm text-gray-600">⏱ Стоимость минуты: 5 ₽</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Standard */}
-            <Card className="relative border-2 border-violet bg-violet/5 h-full flex flex-col">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-violet text-white">
-                Популярный
-              </Badge>
-              <CardHeader>
-                <CardTitle className="text-xl font-montserrat font-semibold">
-                  Стандарт
-                </CardTitle>
-                <CardDescription className="text-violet font-medium">
-                  от 5 направлений
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <div className="space-y-2 text-sm flex-1">
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    До 10 пользователей
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    10 метрик для анализа
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Все функции базового тарифа
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Кастомные этапы продаж
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Личный чек-лист оценки
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Отчёты для собственника и РОПа
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Рекомендации по повышению конверсии
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="text-sm text-gray-600">⏱ Стоимость минуты: 3 ₽</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Premium */}
-            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl font-montserrat font-semibold">
-                  Премиум
-                </CardTitle>
-                <CardDescription className="text-violet font-medium">
-                  от 7 направлений
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <div className="space-y-2 text-sm flex-1">
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    До 15 пользователей
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    15 метрик
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Максимальная персонализация
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Индивидуальные воронки и скрипты
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Расширенные отчёты и аналитика
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Совместная разработка улучшений отдела продаж
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Полная интеграция с CRM и внешними сервисами
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="text-sm text-gray-600">⏱ Стоимость минуты: 2 ₽</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Custom */}
-            <Card className="relative border-2 border-gray-200 h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl font-montserrat font-semibold">
-                  Индивидуальный
-                </CardTitle>
-                <CardDescription className="text-violet font-medium">
-                  Без ограничений по направлениям и метрикам
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <div className="space-y-2 text-sm flex-1">
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    От 15 пользователей
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Любая интеграция с CRM
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Любой объём звонков
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                    Все условия под вас
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="text-lg font-semibold text-center">💬 Обсуждается индивидуально</div>
-                </div>
-                <Button onClick={handleOpenLeadForm} variant="outline" className="w-full border-violet text-violet hover:bg-violet/10 mt-4">
-                  Обсудить условия
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Demo CTA */}
       <section className="py-20 px-6 bg-gradient-to-br from-violet/5 to-lime/5 relative overflow-hidden">
@@ -979,26 +781,10 @@ const Index = () => {
               <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8 leading-tight">
                 Проведем бесплатный аудит и демонстрацию уже сегодня
               </h2>
-              
-              <div className="space-y-6 mb-10">
-                <div className="flex items-start lg:justify-start justify-center">
-                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <p className="text-gray-300 text-lg">Покажем реальные возможности на ваших данных</p>
-                </div>
-                <div className="flex items-start lg:justify-start justify-center">
-                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <p className="text-gray-300 text-lg">Дадим персональные рекомендации по росту</p>
-                </div>
-                <div className="flex items-start lg:justify-start justify-center">
-                  <div className="w-2 h-2 bg-lime rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <p className="text-gray-300 text-lg">Составим план внедрения под вашу CRM</p>
-                </div>
-              </div>
-
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
                 <Button onClick={handleOpenLeadForm} size="lg" className="bg-lime text-black hover:bg-lime/90 font-bold px-10 py-4 text-lg shadow-2xl hover:shadow-lime/25 transition-all">
                   <Icon name="Sparkles" size={20} className="mr-2" />
-                  Получить бесплатный аудит
+                  Записаться на онлайн консультацию
                 </Button>
                 <div className="flex items-center text-gray-400 lg:justify-start justify-center">
                   <Icon name="Clock" size={25} className="mr-2 text-lime" />
