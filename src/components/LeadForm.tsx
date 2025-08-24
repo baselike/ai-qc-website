@@ -19,6 +19,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
   const [errors, setErrors] = useState({
     phone: ''
   });
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const validatePhone = (phone: string): boolean => {
     // Проверяем российский номер телефона
@@ -65,8 +66,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
       if (response.status === 200) {
         const data = await response.json();
         if (data.status === 'ok') {
-          // Успешная отправка - перенаправляем на страницу успеха
-          window.location.href = '/success';
+          // Успешная отправка - показываем сообщение об успехе
+          setShowSuccess(true);
           return;
         }
       }
@@ -83,6 +84,35 @@ export const LeadForm: React.FC<LeadFormProps> = ({ open, onOpenChange }) => {
   };
 
   const isFormValid = formData.companyName.trim() && formData.phone.trim() && formData.fullName.trim() && !errors.phone;
+
+  if (showSuccess) {
+    return (
+      <Dialog open={open} onOpenChange={onOpenChange}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader className="text-center">
+            <div className="mx-auto w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <Icon name="CheckCircle" size={40} className="text-green-500" />
+            </div>
+            <DialogTitle className="text-2xl font-montserrat font-bold text-gray-900 mb-4">
+              Заявка отправлена!
+            </DialogTitle>
+            <p className="text-gray-600 leading-relaxed">
+              Спасибо за ваш интерес к нашему сервису.<br />
+              Мы свяжемся с вами в течение часа, чтобы обсудить детали и назначить созвон.
+            </p>
+          </DialogHeader>
+          <div className="mt-6">
+            <Button 
+              onClick={() => onOpenChange(false)}
+              className="w-full bg-lime text-black hover:bg-lime/90 font-semibold py-3"
+            >
+              Закрыть
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+    );
+  }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
